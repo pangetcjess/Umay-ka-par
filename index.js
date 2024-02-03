@@ -131,9 +131,8 @@ app.get('/dashboard', async (req, res) => {
     uptime: uptime
   });
 });
-const { UptimeNow } = require('replit.uptimer');
 
-UptimeNow();
+        
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'harold.html')));
 
 
