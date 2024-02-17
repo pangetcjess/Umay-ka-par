@@ -116,7 +116,7 @@ module.exports.run = async function ({ api, event, args }) {
 
   const randomQuote = randomQuotes[Math.floor(Math.random() * randomQuotes.length)];
 
-  msg += `├─────☾⋆\n│ » Total commands: [ ${commands.size} ]\n│「 ☾⋆ PREFIX: ${global.config.PREFIX} 」\n╰──────────⧕\n\n𝗥𝗔𝗡𝗗𝗢𝗠 𝗙𝗔𝗖𝗧: ${randomQuote}\n\nOwner: Jonell Magallanes`;
+  msg += `├─────☾⋆\n│ » Total commands: [ ${commands.size} ]\n│「 ☾⋆ PREFIX: ${global.config.PREFIX} 」\n╰──────────⧕\n\n𝗥𝗔𝗡𝗗𝗢𝗠 𝗙𝗔𝗖𝗧: ${randomQuote}\n\n${global.config.BOTOWNER}`;
   
 
   return api.sendMessage(msg, threadID, async (error, info) => {
